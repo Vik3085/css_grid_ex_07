@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blocks</title>
+  <!-- <link rel="stylesheet" href="start.css">
+  <link rel="stylesheet" href="style.css"> -->
+
+<style>
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+display:grid;
+width:100vw;
+height:100vh;
+gap:40px;
+grid-template-areas: 
+"green green  green"
+"yellow red blue"
+"orange orange blue"
+;
+}
+
+
+#green {
+background-color: #8ffda7;
+grid-area: green;
+padding:50px;
+
+}
+
+#orange {
+background-color: #ffc788;
+grid-area: orange;
+padding:50px;
+}
+
+#yellow {
+background-color: #ffff92;
+grid-area: yellow;
+padding:50px;
+}
+
+#red {
+background-color: #ff919c;
+grid-area: red;
+padding:50px;
+}
+
+#blue {
+background-color: #98d2ff;
+grid-area: blue;
+padding:50px;
+}
+
+li {
+    background-color: white;
+    padding: 1em;
+    display:block;
+    width:100px;
+    margin: 1em;
+
+}
+
+ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+      <section id="green">
+        <p>GREEN</p>
+      </section>
+      <section id="yellow">
+        <p>YELLOW</p>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </section>
+      <section id="orange">
+        <p>ORANGE</p>
+      </section>
+      <section id="red">
+        <p>RED</p>
+        <ul>
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
+        </ul>
+      </section>
+      <section id="blue">
+        <p>BLUE</p>
+      </section>
+</body>
+
+</html>
